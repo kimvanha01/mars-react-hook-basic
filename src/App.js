@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './App.scss';
 
 function App() {
+
+  const [todoList, setTodoList] = useState(['ha', 'yeu', 'thu']);
+
+  const removeTodo = (index) => {
+    const newTodo = [...todoList];
+
+    newTodo.splice(index, 1);
+    setTodoList(newTodo);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app" >
+      <ul>
+        {todoList.map((item, index) => (
+          <li onClick={() => removeTodo(index)}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }

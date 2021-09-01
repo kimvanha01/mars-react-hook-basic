@@ -1,15 +1,16 @@
 .clock {
-    background-color: burlywood;
-    color           : crimson;
-    width           : 200px;
-    height          : 100px;
-    margin          : auto;
-    transition      : all 0.35s ease-in-out 0s;
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
-    margin-bottom   : 10px;
-    border-radius   : 10px;
+
+    color          : black;
+    width          : 200px;
+    height         : 100px;
+    margin         : auto;
+    transition     : all 0.35s ease-in-out 0s;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-bottom  : 10px;
+    border-radius  : 10px;
+    border         : 1px solid black;
 
     p {
         font-size  : 36px;

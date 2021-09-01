@@ -1,0 +1,18 @@
+.clock {
+    background-color: burlywood;
+    color           : crimson;
+    width           : 200px;
+    height          : 100px;
+    margin          : auto;
+    transition      : all 0.35s ease-in-out 0s;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    margin-bottom   : 10px;
+    border-radius   : 10px;
+
+    p {
+        font-size  : 36px;
+        font-weight: bold;
+    }
+}
